@@ -26,11 +26,29 @@ public class Sketch extends PApplet {
 	  
 	// sample code, delete this stuff
     stroke(128);
-    line(150, 25, 270, 350);  
+    float churchX = 100;
+    float churchY = 100;
+    float scale = 150;
+    float doorX = (float)(scale / 2.5);
+    float doorY = scale / 1;
+    float roofX = scale / 1;
+    float roofY = scale / 1;
 
-    stroke(255);
-    line(50, 125, 70, 50);  
-  }
+    // Church
+    fill(148, 62, 9);
+    rect(churchX, churchY, scale, (float)(scale * 1.5));
+    
+    
+    // Church Door
+    fill(15, 15, 15);
+    rect(churchX + doorX,churchY + doorY, scale / 4 , scale / 2);  
+    
+    // Roof
+    fill(123, 135, 120);
+    triangle(churchX + roofX, churchY + roofY, churchX + roofX, (float) (height / 1.67),(float) (width / 1.25),(float) (height / 1.67));
+
+}
+
   
   // define other methods down here.
 }
