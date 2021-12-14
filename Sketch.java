@@ -46,7 +46,6 @@ public class Sketch extends PApplet {
     // Roof
     fill(123, 135, 120);
     triangle(churchX + roofX, churchY + roofY, churchX + roofX, (float) (height / 1.67),(float) (width / 1.25),(float) (height / 1.67));
-
 }
 
   
